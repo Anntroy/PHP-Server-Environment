@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/* Main */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: var(--dark);
+}
+
+html {
+    font-size: 62.5%; /* 1 rem == 10 px*/
+}
+
+:root {
+    --light-dark: rgb(201,192,187);
+    --middle-dark:  #a5a7aa;
+    --white-title: rgb(248, 246, 246);
+    --red-error: rgb(173, 32, 32);
+    --dark: #282c34;
+}
+
+/* HEADER AREA */
+
+.header{
+    background: linear-gradient(360deg, #dee1e1 10%, #f4f4f4 360%);
+    height: 9vh;
+    font-size: 0.8rem;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header__article {
+    margin-left: auto;
+    display: flex;
+    margin-right: 1vh;
+}
+
+.button {
+    min-height: 44px;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+}
+
+.title {
+    height: 9vh;
+    width: 9vh;
+    border: none;
+    width: 40vh;
+}
+
+.button:hover {
+    filter: opacity(0.6);
+}
+
+.button-h1 {
+    font-size: 2rem;
+}
+
+/* Modal Log In form */
+
+.modal__form {
+    background-color: #fefefe;
+    margin: 12vh auto 15vh auto;
+    border: 1px solid #888;
+    width: 80vw;
+    max-width: 35rem;
+    border-radius: 5px;
+}
+
+.modal__form-div {
+    padding: 2vh;
+    margin-bottom: 3.5vh;
+}
+
+.modal__form-div-h2 {
+    font-size: 2rem;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 2.5rem;
+}
+
+.modal__form-div-label {
+    padding-top: 2vh;
+    font-size: 1.8rem;
+}
+
+.modal__form-div-input {
+    width: 100%;
+    padding: 1vh;
+    font-size: 1.6rem;
+    border: none;
+    display: inline-block;
+    background: linear-gradient(360deg, #dee1e1 10%, #f4f4f4 360%);
+    border-radius: 5px;
+    margin: 1.5vh 0;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    outline: none;
+}
+
+.error {
+    color: var(--red-error);
+    text-align: center;
+}
+
+.btn {
+    padding: 14px 20px;
+    margin: 8px 0;
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 1px solid #888;
+}
+
+.btn:hover {
+    background-color:  var(--middle-dark);
+    opacity:1;
+}
+
+.cancelbtn {
+    float: left;
+    width: 45%;
+}
+
+.loginbtn {
+    float: right;
+    width: 45%;
+}
+
+.logoutbtn {
+    width: 50%;
+}
+
+.clearfix {
+    position: relative;
+    top: 3vh;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
